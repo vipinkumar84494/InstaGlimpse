@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "523447354090",
+    "project_id": "instaglimpse-5f10d",
+    "storage_bucket": "instaglimpse-5f10d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523447354090:android:7dd05d84a6e34d53828d93",
+        "android_client_info": {
+          "package_name": "com.vk.instaglimpse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWoIv_x0sMJ6o2ZfF_rGUvTZAAz6OVtBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

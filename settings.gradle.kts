@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "InstaGlimpse"
 include(":app")
- 
