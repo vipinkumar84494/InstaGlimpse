@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -54,4 +55,9 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation (libs.circleimageview)
+
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-analytics:22.1.2")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database:21.0.0")
 }
