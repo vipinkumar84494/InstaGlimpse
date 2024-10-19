@@ -54,10 +54,16 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    //circleimageview
     implementation (libs.circleimageview)
 
-    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
-    implementation("com.google.firebase:firebase-analytics:22.1.2")
-    implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.firebase:firebase-database:21.0.0")
+    //firebase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
+
+    //Glide
+    implementation (libs.glide)
+    annotationProcessor (libs.compiler)
 }

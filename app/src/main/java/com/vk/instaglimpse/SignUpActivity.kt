@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.vk.instaglimpse.databinding.ActivitySignUpBinding
+import java.util.Locale
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -101,11 +102,11 @@ class SignUpActivity : AppCompatActivity() {
 
         val userMap = HashMap<String,Any>()
         userMap["uid"] = currentUserId
-        userMap["fullname"] = fullName
-        userMap["username"] = userName
+        userMap["fullname"] = fullName.toLowerCase(Locale.ROOT)
+        userMap["username"] = userName.toLowerCase(Locale.ROOT)
         userMap["email"] = email
         userMap["bio"] = "Hey, I am using InstaGlimpse"
-        userMap["image"] = "gs://instaglimpse-5f10d.appspot.com/Default images/profile.png"
+        userMap["image"] = "https://firebasestorage.googleapis.com/v0/b/instaglimpse-5f10d.appspot.com/o/Default%20images%2Fprofile.png?alt=media&token=300cdb5f-0c90-4a30-893e-4c43efebe031"
 
         userRef.child(currentUserId).setValue(userMap).addOnCompleteListener {
             task ->
